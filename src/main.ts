@@ -161,6 +161,11 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div class="mobile-panel" aria-hidden="true">
     <div class="mobile-panel-head"><a class="wordmark" href="#top">wanseo</a><button class="mobile-close" aria-label="Close menu">${icon('close')}</button></div>
     <nav><a href="#shop">Shop <span>01</span></a><a href="#journal">Journal <span>02</span></a><a href="#about">Our story <span>03</span></a></nav>
+    <div class="mobile-menu-actions">
+      <button class="text-button search-trigger" type="button">Search ${icon('arrow')}</button>
+      <button class="text-button login-trigger" type="button">Login ${icon('arrow')}</button>
+      <button class="bag-button" type="button" aria-label="Open shopping bag">Bag <b class="cart-count">0</b></button>
+    </div>
     <p>COFFEE / OBJECTS / DAILY UNIFORMS<br>SEOUL, KR — EST. 2026</p>
   </div>
 
@@ -246,7 +251,7 @@ document.querySelectorAll<HTMLButtonElement>('.filter').forEach((button) => {
   })
 })
 
-document.querySelector('.bag-button')!.addEventListener('click', () => setOverlay('cart'))
+document.querySelectorAll('.bag-button').forEach((button) => button.addEventListener('click', () => setOverlay('cart')))
 document.querySelector('.menu-button')!.addEventListener('click', () => setOverlay('menu'))
 document.querySelector('.drawer-close')!.addEventListener('click', () => setOverlay(null))
 document.querySelector('.mobile-close')!.addEventListener('click', () => setOverlay(null))
@@ -283,7 +288,7 @@ function renderSearch(query = '') {
   `).join('') : '<p>NO RESULTS. TRY “COFFEE” OR “MUG”.</p>'
 }
 
-document.querySelector('.search-trigger')!.addEventListener('click', () => setOverlay('search'))
+document.querySelectorAll('.search-trigger').forEach((button) => button.addEventListener('click', () => setOverlay('search')))
 searchInput.addEventListener('input', () => renderSearch(searchInput.value))
 searchResults.addEventListener('click', (event) => {
   const button = (event.target as HTMLElement).closest<HTMLButtonElement>('button[data-search-id]')
