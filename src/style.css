@@ -99,14 +99,12 @@ svg { width: 1.2em; height: 1.2em; fill: none; stroke: currentColor; stroke-widt
 .hero-caption { position: absolute; z-index: 3; bottom: 2.125rem; right: 3vw; margin: 0; text-align: right; font: 300 0.5625rem/1.5 var(--mono); text-transform: uppercase; letter-spacing: .08em; }
 
 .manifesto { padding: 3rem 4.5vw 2rem; display: grid; grid-template-columns: 3.2fr 1fr 1fr; gap: 3vw; align-items: start; opacity: 0; transform: translateY(1.75rem); transition: opacity .8s ease, transform .8s ease; }
-.manifesto.visible, .shop-heading.visible, .editorial-copy.visible, .newsletter.visible { opacity: 1; transform: none; }
+.manifesto.visible, .shop-heading.visible { opacity: 1; transform: none; }
 .manifesto-copy { grid-column: 1 / -1; margin: 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 1.25rem; font-weight: 400; line-height: 1.45; letter-spacing: -.025em; }
 .manifesto-copy em { font-family: var(--serif); font-weight: 400; color: var(--wine); }
-.footer-note { margin-top: 1.5rem; font: 400 0.5625rem/1.7 var(--mono); letter-spacing: .06em; }
 
 .shop-section { padding: 0 2.3vw 8.125rem; }
 .shop-heading { display: flex; justify-content: flex-start; align-items: end; margin: 0 2vw 3.75rem; opacity: 0; transform: translateY(1.5625rem); transition: .8s ease; }
-.shop-heading h2, .editorial-copy h2, .newsletter h2 { margin: 0; font-size: min(6.4vw, 6.5625rem); line-height: .85; letter-spacing: -.06em; font-weight: 500; }
 .filters { display: flex; gap: 0.5rem; flex-wrap: nowrap; justify-content: flex-start; }
 .filter { border: 1px solid var(--ink); border-radius: 0; background: transparent; padding: 0.625rem 0.9375rem; cursor: pointer; font: 400 0.625rem var(--mono); text-transform: uppercase; transition: .2s ease; }
 .filter sup { font-size: 0.4375rem; margin-left: 0.375rem; }
@@ -123,54 +121,6 @@ svg { width: 1.2em; height: 1.2em; fill: none; stroke: currentColor; stroke-widt
 .product-info p, .product-info strong { margin: 0; font: 400 0.5625rem var(--mono); text-transform: uppercase; }
 .product-info p { opacity: .58; }
 .product-info strong { white-space: nowrap; }
-
-.editorial { min-height: 48.75rem; display: grid; grid-template-columns: 56% 44%; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); }
-.editorial-image { min-height: 48.75rem; background: #fff; position: relative; border-right: 1px solid var(--ink); }
-.photo-label { position: absolute; left: 1.125rem; bottom: 1.125rem; background: #fff; border: 1px solid var(--ink); padding: 0.4375rem 0.5625rem; font: 400 0.5rem var(--mono); }
-.editorial-copy { position: relative; padding: 4.0625rem 4vw 2.8125rem; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden; background: #fff; opacity: 0; transform: translateY(1.5625rem); transition: .8s ease; }
-.editorial-copy h2 { font-size: min(7vw, 6.875rem); }
-.article-body { position: relative; z-index: 2; max-width: 24.375rem; margin-left: auto; }
-.article-body p { font-size: 0.9375rem; line-height: 1.75; word-break: keep-all; }
-.article-body a { display: flex; justify-content: space-between; align-items: center; margin-top: 1.75rem; padding-bottom: 0.5rem; border-bottom: 1px solid; font: 400 0.625rem var(--mono); text-transform: uppercase; }
-.giant-eleven { position: absolute; left: -0.625rem; bottom: -12vw; color: rgba(23,23,20,.07); font: 500 40vw/.8 var(--sans); letter-spacing: -.12em; }
-
-.tour-feature { min-height: 56.25rem; position: relative; display: grid; grid-template-columns: 53% 47%; overflow: hidden; background: #fff; color: var(--ink); border-bottom: 1px solid var(--ink); }
-.tour-feature::after { content: none; position: absolute; inset: 0; pointer-events: none; opacity: .16; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='t'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23t)'/%3E%3C/svg%3E"); mix-blend-mode: screen; }
-.tour-photo { min-height: 56.25rem; position: relative; background: #fff; }
-.snapshot-meta { position: absolute; z-index: 2; left: 1.375rem; top: 1.5rem; padding: 0.4375rem 0.5625rem; color: var(--ink); border: 1px solid var(--ink); background: #fff; font: 400 0.5rem/1.5 var(--mono); letter-spacing: .05em; }
-.tour-poster { min-width: 0; position: relative; padding: 2.5rem 3.5vw 3rem; border-left: 1px solid var(--line); display: flex; flex-direction: column; }
-.tour-kicker { display: flex; justify-content: space-between; font: 400 0.5rem var(--mono); letter-spacing: .08em; }
-.tour-title { position: relative; z-index: 2; margin: 7.1875rem 0 2.1875rem; transform: translateX(-18vw); width: calc(100% + 18vw); text-shadow: none; }
-.tour-title small { display: block; margin-left: .6vw; font: 600 min(2.3vw, 2.3125rem)/.8 var(--sans); letter-spacing: -.05em; }
-.tour-title h2 { margin: 0; font: 600 min(9.7vw, 9.875rem)/.66 var(--sans); letter-spacing: -.085em; }
-.tour-title h2 i { font-style: normal; white-space: nowrap; }
-.tour-intro { margin: 0.3125rem 0 2.5rem; font: 400 0.625rem/1.6 var(--mono); text-transform: uppercase; }
-.tour-dates { margin-top: auto; border-top: 1px solid var(--ink); }
-.tour-dates div { display: grid; grid-template-columns: 4.125rem 1fr auto; gap: 0.75rem; align-items: center; padding: 0.625rem 0; border-bottom: 1px solid var(--line); font: 400 0.625rem var(--mono); }
-.tour-dates b { font-weight: 500; }
-.tour-dates i { font-style: normal; font-size: 0.4375rem; color: var(--acid); }
-.tour-ticket { position: relative; z-index: 3; display: flex; align-items: center; justify-content: space-between; margin-top: 1.5625rem; padding-bottom: 0.5625rem; border-bottom: 1px solid; font: 400 0.625rem var(--mono); }
-.tour-ticket svg { transition: transform .2s ease; }
-.tour-ticket:hover svg { transform: translateX(0.375rem); }
-
-.newsletter { min-height: 40.625rem; padding: 5rem 5vw 3.75rem; display: flex; flex-direction: column; align-items: center; text-align: center; opacity: 0; transform: translateY(1.5625rem); transition: .8s ease; }
-.newsletter .section-number { margin-bottom: auto; }
-.newsletter h2 i { font-family: var(--serif); font-weight: 400; color: var(--wine); }
-.signup-form { width: min(42.5rem, 100%); display: flex; border-bottom: 1px solid var(--ink); margin-top: 4.6875rem; }
-.signup-form input { flex: 1; min-width: 0; padding: 1.0625rem 0; border: 0; outline: 0; background: transparent; font: 400 0.75rem var(--mono); color: var(--ink); }
-.signup-form input::placeholder { color: var(--ink); opacity: 1; }
-.signup-form button { width: 2.8125rem; border: 0; background: transparent; cursor: pointer; display: grid; place-items: center; }
-.signup-form button:hover svg { transform: translateX(0.3125rem); }
-.signup-form svg { transition: transform .2s; }
-.form-status { min-height: 1.125rem; margin-top: 0.9375rem; font: 300 0.5625rem var(--mono); text-transform: uppercase; }
-
-footer { padding: 4.375rem 3vw 1.5rem; background: #fff; color: var(--ink); }
-.footer-mark { display: block; font-size: min(37vw, 36.25rem); line-height: .68; letter-spacing: -.11em; font-weight: 600; margin-left: -2vw; }
-.footer-links { display: grid; grid-template-columns: 2fr 1fr 1fr; border-top: 1px solid var(--line); margin-top: 4.0625rem; padding-top: 1.5rem; }
-.footer-links div { display: flex; flex-direction: column; gap: 0.4375rem; font: 300 0.625rem/1.6 var(--mono); text-transform: uppercase; }
-.footer-links b { margin-bottom: 0.75rem; color: var(--acid); font-weight: 400; }
-.footer-links a:hover { text-decoration: underline; }
-footer > p { margin: 5rem 0 0; font: 300 0.5rem var(--mono); opacity: .6; }
 
 .drawer-backdrop { position: fixed; z-index: 50; inset: 0; background: rgba(10,10,8,.55); opacity: 0; visibility: hidden; transition: .3s; }
 .drawer-backdrop.open { opacity: 1; visibility: visible; }

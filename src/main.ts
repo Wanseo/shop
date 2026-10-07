@@ -77,65 +77,7 @@ We hope you’ll look forward to all the things we’ll create along the way.</p
       <div class="product-grid" aria-live="polite"></div>
     </section>
 
-    <section class="editorial" id="journal">
-      <div class="editorial-image">
-        <span class="photo-label">PLATE 01 / DAILY TOOLS</span>
-      </div>
-      <div class="editorial-copy">
-        <div>
-          <p class="eyebrow dark">Journal 001</p>
-          <h2>The comfort<br>of repetition.</h2>
-        </div>
-        <div class="article-body">
-          <p>같은 시간, 같은 잔, 같은 향. 반복되는 일상 속에서 취향은 조금씩 선명해집니다. H11은 매일 손이 가는 물건을 천천히 만들고 소개합니다.</p>
-          <a href="#about">Read the story ${icon('arrow')}</a>
-        </div>
-        <span class="giant-eleven">11</span>
-      </div>
-    </section>
-
-    <section class="tour-feature">
-      <div class="tour-photo">
-        <span class="snapshot-meta">HOME VISIT 04<br>MAPO-GU, SEOUL<br>04:17 PM</span>
-      </div>
-      <div class="tour-poster">
-        <div class="tour-kicker"><span>H11 PRESENTS</span><span>ISSUE 01 / 2026</span></div>
-        <div class="tour-title"><small>WELCOME TO THE</small><h2>after hours<br><i>coffee tour</i></h2></div>
-        <p class="tour-intro">Coffee, records and a few good things.<br>Coming to a neighborhood near you.</p>
-        <div class="tour-dates">
-          <div><b>SEP 18</b><span>YEONNAM, SEOUL</span><i>◆</i></div>
-          <div><b>SEP 26</b><span>SEONGSU, SEOUL</span><i>●</i></div>
-          <div><b>OCT 03</b><span>EULJIRO, SEOUL</span><i>◇</i></div>
-          <div><b>OCT 17</b><span>JEONPO, BUSAN</span><i>●</i></div>
-          <div><b>NOV 07</b><span>DONGMYEONG, GWANGJU</span><i>◆</i></div>
-          <div><b>NOV 21</b><span>JONGDAL, JEJU</span><i>◇</i></div>
-        </div>
-        <a class="tour-ticket" href="#shop">GET THE TOUR SET ${icon('arrow')}</a>
-      </div>
-    </section>
-
-    <section class="newsletter">
-      <div class="section-number">[ STAY IN THE LOOP ]</div>
-      <h2>Letters from<br>the <i>late shift.</i></h2>
-      <form class="signup-form">
-        <label class="sr-only" for="email">Email address</label>
-        <input id="email" type="email" placeholder="EMAIL ADDRESS" required>
-        <button type="submit" aria-label="Subscribe">${icon('arrow')}</button>
-      </form>
-      <p class="form-status" aria-live="polite">Monthly notes, new roasts and small editions. No noise.</p>
-    </section>
   </main>
-
-  <footer>
-    <a class="footer-mark" href="#top">H11</a>
-    <div class="footer-links">
-      <div><b>Visit</b><span>서울시 마포구 연남동 11-1<br>Tue–Sun, 11:00–20:00</span></div>
-      <div><b>Follow</b><a href="#">Instagram</a><a href="#">Newsletter</a></div>
-      <div><b>Help</b><a href="#">Shipping & returns</a><a href="mailto:hello@h11.kr">hello@h11.kr</a></div>
-    </div>
-    <p>© 2026 H11 STUDIO. ALL RIGHTS RESERVED.</p>
-    <div class="footer-note">ROASTED IN SMALL BATCHES<br>DESIGNED IN SEOUL<br>EST. 2026</div>
-  </footer>
 
   <div class="drawer-backdrop"></div>
   <aside class="cart-drawer" aria-hidden="true" aria-label="Shopping bag">
@@ -261,13 +203,6 @@ document.querySelector('.cart-items')!.addEventListener('click', (event) => {
   renderCart()
 })
 
-document.querySelector<HTMLFormElement>('.signup-form')!.addEventListener('submit', (event) => {
-  event.preventDefault()
-  const input = document.querySelector<HTMLInputElement>('#email')!
-  document.querySelector<HTMLElement>('.form-status')!.textContent = `Thanks — we'll write to ${input.value}.`
-  input.value = ''
-})
-
 const searchResults = document.querySelector<HTMLDivElement>('.search-results')!
 const searchInput = document.querySelector<HTMLInputElement>('#product-search')!
 
@@ -295,7 +230,7 @@ document.addEventListener('keydown', (event) => {
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => entry.isIntersecting && entry.target.classList.add('visible'))
 }, { threshold: 0.15 })
-document.querySelectorAll('.manifesto, .shop-heading, .editorial-copy, .newsletter').forEach((el) => observer.observe(el))
+document.querySelectorAll('.manifesto, .shop-heading').forEach((el) => observer.observe(el))
 
 renderProducts()
 renderCart()
