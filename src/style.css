@@ -100,7 +100,7 @@ svg { width: 1.2em; height: 1.2em; fill: none; stroke: currentColor; stroke-widt
 .manifesto.visible, .shop-heading.visible, .editorial-copy.visible, .newsletter.visible { opacity: 1; transform: none; }
 .manifesto-copy { margin: 0; font-size: min(5vw, 4.75rem); line-height: .99; letter-spacing: -.045em; }
 .manifesto-copy em { font-family: var(--serif); font-weight: 400; color: var(--wine); }
-.manifesto-note { align-self: end; font: 400 0.5625rem/1.7 var(--mono); letter-spacing: .06em; }
+.footer-note { margin-top: 1.5rem; font: 400 0.5625rem/1.7 var(--mono); letter-spacing: .06em; }
 
 .marquee { overflow: hidden; background: #fff; color: var(--ink); border-bottom: 1px solid var(--ink); padding: 0.875rem 0 0.8125rem; }
 .marquee div { width: max-content; font: 400 0.8125rem var(--mono); letter-spacing: .06em; animation: marquee 30s linear infinite; }

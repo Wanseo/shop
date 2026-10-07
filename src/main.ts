@@ -65,7 +65,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <div aria-hidden="true"></div>
       <p class="manifesto-copy">We started this brand with the desire to create beautiful things and share them with others.
 We hope you’ll look forward to all the things we’ll create along the way.</p>
-      <div class="manifesto-note">ROASTED IN SMALL BATCHES<br>DESIGNED IN SEOUL<br>EST. 2026</div>
     </section>
 
     <div class="marquee" aria-hidden="true">
@@ -145,6 +144,7 @@ We hope you’ll look forward to all the things we’ll create along the way.</p
       <div><b>Help</b><a href="#">Shipping & returns</a><a href="mailto:hello@h11.kr">hello@h11.kr</a></div>
     </div>
     <p>© 2026 H11 STUDIO. ALL RIGHTS RESERVED.</p>
+    <div class="footer-note">ROASTED IN SMALL BATCHES<br>DESIGNED IN SEOUL<br>EST. 2026</div>
   </footer>
 
   <div class="drawer-backdrop"></div>
