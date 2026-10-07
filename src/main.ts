@@ -62,7 +62,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     </section>
 
     <section class="manifesto" id="about">
-      <div class="section-number">[ 01 — MANIFESTO ]</div>
+      <div aria-hidden="true"></div>
       <p class="manifesto-copy">H11 is a coffee break stretched into a way of living. We make <em>good coffee</em> and useful objects for people who prefer their days a little less polished.</p>
       <div class="manifesto-note">ROASTED IN SMALL BATCHES<br>DESIGNED IN SEOUL<br>EST. 2026</div>
     </section>
