@@ -24,9 +24,18 @@ html { scroll-behavior: smooth; background: #fff; }
 body { margin: 0; background: #fff; overflow-x: hidden; }
 body.locked { overflow: hidden; }
 main#top {
+  position: relative;
   min-height: 100vh;
   min-height: 100svh;
-  background: #fff url('./assets/mountain-meadow.png') center center / cover no-repeat;
+  background: linear-gradient(#dcebf7, #cfe3f2);
+}
+main#top::before {
+  content: '';
+  position: absolute;
+  inset: 120px 0 0;
+  background: url('./assets/mountain-meadow.png') center top / cover no-repeat;
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 80px);
+  mask-image: linear-gradient(to bottom, transparent, #000 80px);
 }
 main#top > *, #app > footer { display: none; }
 button, input { font: inherit; }
@@ -220,7 +229,7 @@ footer > p { margin: 80px 0 0; font: 300 8px var(--mono); opacity: .6; }
 .toast.show { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
 
 @media (max-width: 900px) {
-  main#top { background-position: 58% center; }
+  main#top::before { top: 90px; background-position: 58% top; }
   .site-header { height: 68px; grid-template-columns: 1fr auto; }
   .header-actions { grid-column: 2; }
   .desktop-nav, .header-actions > .search-trigger, .header-actions > .login-trigger, .header-actions > .bag-button { display: none; }
