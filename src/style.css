@@ -103,7 +103,7 @@ svg { width: 1.2em; height: 1.2em; fill: none; stroke: currentColor; stroke-widt
 .footer-note { margin-top: 1.5rem; font: 400 0.5625rem/1.7 var(--mono); letter-spacing: .06em; }
 
 .shop-section { padding: 6.25rem 2.3vw 8.125rem; }
-.shop-heading { display: flex; justify-content: space-between; align-items: end; margin: 0 2vw 3.75rem; opacity: 0; transform: translateY(1.5625rem); transition: .8s ease; }
+.shop-heading { display: flex; justify-content: flex-end; align-items: end; margin: 0 2vw 3.75rem; opacity: 0; transform: translateY(1.5625rem); transition: .8s ease; }
 .shop-heading h2, .editorial-copy h2, .newsletter h2 { margin: 0; font-size: min(6.4vw, 6.5625rem); line-height: .85; letter-spacing: -.06em; font-weight: 500; }
 .filters { display: flex; gap: 0.5rem; flex-wrap: nowrap; justify-content: flex-end; }
 .filter { border: 1px solid var(--ink); border-radius: 62.4375rem; background: transparent; padding: 0.625rem 0.9375rem; cursor: pointer; font: 400 0.625rem var(--mono); text-transform: uppercase; transition: .2s ease; }

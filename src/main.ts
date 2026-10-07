@@ -69,10 +69,6 @@ We hope you’ll look forward to all the things we’ll create along the way.</p
 
     <section class="shop-section" id="shop">
       <div class="shop-heading">
-        <div>
-          <p class="eyebrow dark">The current edit</p>
-          <h2>Things we keep<br>close at hand.</h2>
-        </div>
         <div class="filters" role="group" aria-label="Filter products">
           <button class="filter active" data-filter="all" type="button">All <sup>06</sup></button>
           <button class="filter" data-filter="coffee" type="button">Coffee <sup>02</sup></button>
