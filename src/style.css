@@ -59,7 +59,7 @@ svg { width: 1.2em; height: 1.2em; fill: none; stroke: currentColor; stroke-widt
   color: var(--ink);
 }
 
-.wordmark { display: inline-block; font-family: 'Bespoke Sans', sans-serif; font-size: 96px; font-weight: 500; letter-spacing: -.09em; line-height: 1; transform: scaleX(1.06); transform-origin: center; }
+.wordmark { display: inline-block; font-family: var(--sans); font-size: 96px; font-weight: 500; letter-spacing: -.09em; line-height: 1; transform: scaleX(1.06); transform-origin: center; }
 .header-brand { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; gap: 16px; }
 .wordmark span { font: 400 8px var(--mono); vertical-align: top; margin-left: 5px; letter-spacing: 0; }
 .desktop-nav { display: flex; gap: 34px; }
