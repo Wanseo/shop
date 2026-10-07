@@ -61,7 +61,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     </section>
 
     <section class="manifesto" id="about">
-      <p class="manifesto-copy">We started this brand with the desire to create beautiful things and share them with others.
+      <p class="manifesto-copy">We started this brand with the desire to create beautiful things and share them with others.<br>
 We hope you’ll look forward to all the things we’ll create along the way.</p>
     </section>
 
