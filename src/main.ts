@@ -42,7 +42,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <a class="wordmark" href="#top" aria-label="wanseo home">wanseo</a>
       <nav class="desktop-nav" aria-label="Main navigation">
         <a href="#shop">Shop</a>
-        <a href="#journal">Journal</a>
         <a href="#about">About</a>
       </nav>
     </div>
@@ -152,7 +151,7 @@ We hope you’ll look forward to all the things we’ll create along the way.</p
 
   <div class="mobile-panel" aria-hidden="true">
     <div class="mobile-panel-head"><a class="wordmark" href="#top">wanseo</a><button class="mobile-close" aria-label="Close menu">${icon('close')}</button></div>
-    <nav><a href="#shop">Shop <span>01</span></a><a href="#journal">Journal <span>02</span></a><a href="#about">Our story <span>03</span></a></nav>
+    <nav><a href="#shop">Shop <span>01</span></a><a href="#about">Our story <span>02</span></a></nav>
     <div class="mobile-menu-actions">
       <button class="text-button search-trigger" type="button">Search ${icon('arrow')}</button>
       <button class="text-button login-trigger" type="button">Login ${icon('arrow')}</button>
