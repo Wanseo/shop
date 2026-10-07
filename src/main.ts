@@ -63,7 +63,11 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
     <section class="manifesto" id="about">
       <div aria-hidden="true"></div>
-      <p class="manifesto-copy">wanseo has small hands for their height, but loves making things with them. Maybe that constant urge to create comes from their dad. This brand was born from a wish to make beautiful things and share them with you. We hope you’ll follow along.</p>
+      <p class="manifesto-copy">Wanseo has small hands for her height.
+But with those small hands, she has always loved making things.
+Perhaps the reason she’s always drawn to creating something new is because she takes after her father.
+With a desire to create beautiful things and share them with others, she launched this brand.
+We hope you’ll enjoy what we create and follow along on our journey.</p>
       <div class="manifesto-note">ROASTED IN SMALL BATCHES<br>DESIGNED IN SEOUL<br>EST. 2026</div>
     </section>
 
