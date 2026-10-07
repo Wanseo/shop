@@ -98,13 +98,13 @@ svg { width: 1.2em; height: 1.2em; fill: none; stroke: currentColor; stroke-widt
 .pill-link:hover { background: var(--acid); color: var(--ink); border-color: var(--acid); gap: 3.625rem; }
 .hero-caption { position: absolute; z-index: 3; bottom: 2.125rem; right: 3vw; margin: 0; text-align: right; font: 300 0.5625rem/1.5 var(--mono); text-transform: uppercase; letter-spacing: .08em; }
 
-.manifesto { min-height: 38.125rem; padding: 3rem 4.5vw 4.5rem; display: grid; grid-template-columns: 3.2fr 1fr 1fr; gap: 3vw; align-items: start; opacity: 0; transform: translateY(1.75rem); transition: opacity .8s ease, transform .8s ease; }
+.manifesto { padding: 3rem 4.5vw 2rem; display: grid; grid-template-columns: 3.2fr 1fr 1fr; gap: 3vw; align-items: start; opacity: 0; transform: translateY(1.75rem); transition: opacity .8s ease, transform .8s ease; }
 .manifesto.visible, .shop-heading.visible, .editorial-copy.visible, .newsletter.visible { opacity: 1; transform: none; }
 .manifesto-copy { grid-column: 1 / -1; margin: 0; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 1.25rem; font-weight: 400; line-height: 1.45; letter-spacing: -.025em; }
 .manifesto-copy em { font-family: var(--serif); font-weight: 400; color: var(--wine); }
 .footer-note { margin-top: 1.5rem; font: 400 0.5625rem/1.7 var(--mono); letter-spacing: .06em; }
 
-.shop-section { padding: 6.25rem 2.3vw 8.125rem; }
+.shop-section { padding: 0 2.3vw 8.125rem; }
 .shop-heading { display: flex; justify-content: flex-start; align-items: end; margin: 0 2vw 3.75rem; opacity: 0; transform: translateY(1.5625rem); transition: .8s ease; }
 .shop-heading h2, .editorial-copy h2, .newsletter h2 { margin: 0; font-size: min(6.4vw, 6.5625rem); line-height: .85; letter-spacing: -.06em; font-weight: 500; }
 .filters { display: flex; gap: 0.5rem; flex-wrap: nowrap; justify-content: flex-start; }
