@@ -62,7 +62,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     </section>
 
     <section class="manifesto" id="about">
-      <div class="section-number">Brand Introduction</div>
+      <div aria-hidden="true"></div>
       <p class="manifesto-copy">We started this brand with the desire to create beautiful things and share them with others.
 We hope you’ll look forward to all the things we’ll create along the way.</p>
       <div class="manifesto-note">ROASTED IN SMALL BATCHES<br>DESIGNED IN SEOUL<br>EST. 2026</div>
