@@ -70,6 +70,8 @@ svg { width: 1.2em; height: 1.2em; fill: none; stroke: currentColor; stroke-widt
 .desktop-nav a::after { content: ''; position: absolute; height: 1px; background: currentColor; left: 0; right: 100%; bottom: -0.3125rem; transition: right .25s ease; }
 .desktop-nav a:hover::after { right: 0; }
 .header-actions { grid-column: 3; display: flex; justify-content: flex-end; gap: 1.625rem; align-items: center; }
+.header-actions .text-button, .header-actions .bag-button { font-size: 1rem; }
+.header-actions .bag-button b { width: 1.666667rem; height: 1.666667rem; font-size: 0.833333rem; }
 .text-button, .bag-button, .menu-button { border: 0; background: transparent; padding: 0; cursor: pointer; }
 .bag-button { color: inherit; display: flex; gap: 0.4375rem; align-items: center; }
 .bag-button svg { display: none; }
