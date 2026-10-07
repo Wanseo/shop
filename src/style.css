@@ -96,7 +96,7 @@ svg { width: 1.2em; height: 1.2em; fill: none; stroke: currentColor; stroke-widt
 .pill-link:hover { background: var(--acid); color: var(--ink); border-color: var(--acid); gap: 3.625rem; }
 .hero-caption { position: absolute; z-index: 3; bottom: 2.125rem; right: 3vw; margin: 0; text-align: right; font: 300 0.5625rem/1.5 var(--mono); text-transform: uppercase; letter-spacing: .08em; }
 
-.manifesto { min-height: 38.125rem; padding: 3rem 4.5vw 4.5rem; display: grid; grid-template-columns: 1fr 3.2fr 1fr; gap: 3vw; border-bottom: 1px solid var(--ink); align-items: start; opacity: 0; transform: translateY(1.75rem); transition: opacity .8s ease, transform .8s ease; }
+.manifesto { min-height: 38.125rem; padding: 3rem 4.5vw 4.5rem; display: grid; grid-template-columns: 1fr 3.2fr 1fr; gap: 3vw; align-items: start; opacity: 0; transform: translateY(1.75rem); transition: opacity .8s ease, transform .8s ease; }
 .manifesto.visible, .shop-heading.visible, .editorial-copy.visible, .newsletter.visible { opacity: 1; transform: none; }
 .manifesto-copy { margin: 0; font-size: min(5vw, 4.75rem); line-height: .99; letter-spacing: -.045em; }
 .manifesto-copy em { font-family: var(--serif); font-weight: 400; color: var(--wine); }
