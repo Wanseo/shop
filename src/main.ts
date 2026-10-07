@@ -67,10 +67,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 We hope you’ll look forward to all the things we’ll create along the way.</p>
     </section>
 
-    <div class="marquee" aria-hidden="true">
-      <div>COFFEE FOR LATE STARTERS ✳ OBJECTS WITH A PAST ✳ EVERYDAY UNIFORMS ✳ COFFEE FOR LATE STARTERS ✳ OBJECTS WITH A PAST ✳ EVERYDAY UNIFORMS ✳</div>
-    </div>
-
     <section class="shop-section" id="shop">
       <div class="shop-heading">
         <div>

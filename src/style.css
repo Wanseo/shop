@@ -102,10 +102,6 @@ svg { width: 1.2em; height: 1.2em; fill: none; stroke: currentColor; stroke-widt
 .manifesto-copy em { font-family: var(--serif); font-weight: 400; color: var(--wine); }
 .footer-note { margin-top: 1.5rem; font: 400 0.5625rem/1.7 var(--mono); letter-spacing: .06em; }
 
-.marquee { overflow: hidden; background: #fff; color: var(--ink); border-bottom: 1px solid var(--ink); padding: 0.875rem 0 0.8125rem; }
-.marquee div { width: max-content; font: 400 0.8125rem var(--mono); letter-spacing: .06em; animation: marquee 30s linear infinite; }
-@keyframes marquee { to { transform: translateX(-50%); } }
-
 .shop-section { padding: 6.25rem 2.3vw 8.125rem; }
 .shop-heading { display: flex; justify-content: space-between; align-items: end; margin: 0 2vw 3.75rem; opacity: 0; transform: translateY(1.5625rem); transition: .8s ease; }
 .shop-heading h2, .editorial-copy h2, .newsletter h2 { margin: 0; font-size: min(6.4vw, 6.5625rem); line-height: .85; letter-spacing: -.06em; font-weight: 500; }
