@@ -161,7 +161,7 @@ footer > p { margin: 80px 0 0; font: 300 8px var(--mono); opacity: .6; }
 
 .drawer-backdrop { position: fixed; z-index: 50; inset: 0; background: rgba(10,10,8,.55); opacity: 0; visibility: hidden; transition: .3s; }
 .drawer-backdrop.open { opacity: 1; visibility: visible; }
-.cart-drawer { position: fixed; z-index: 60; top: 0; right: 0; bottom: 0; width: min(480px, 100%); padding: 28px; background: var(--paper); transform: translateX(102%); transition: transform .4s cubic-bezier(.77,0,.18,1); display: flex; flex-direction: column; }
+.cart-drawer { position: fixed; z-index: 60; top: 0; right: 0; bottom: 0; width: min(480px, 100%); padding: 28px; background: #fff; transform: translateX(102%); transition: transform .4s cubic-bezier(.77,0,.18,1); display: flex; flex-direction: column; }
 .cart-drawer.open { transform: none; }
 .drawer-head { display: flex; justify-content: space-between; align-items: center; padding-bottom: 23px; border-bottom: 1px solid var(--ink); }
 .drawer-head h2 { margin: 0; font-size: 29px; letter-spacing: -.05em; }
@@ -189,7 +189,7 @@ footer > p { margin: 80px 0 0; font: 300 8px var(--mono); opacity: .6; }
 .checkout-button { width: 100%; padding: 16px; margin-top: 14px; border: 1px solid var(--ink); background: var(--ink); color: var(--paper); cursor: pointer; font: 400 10px var(--mono); text-transform: uppercase; }
 .checkout-button:hover { background: var(--wine); }
 
-.mobile-panel { position: fixed; z-index: 61; inset: 0; padding: 25px; background: var(--acid); transform: translateY(-102%); transition: transform .45s cubic-bezier(.77,0,.18,1); display: flex; flex-direction: column; }
+.mobile-panel { position: fixed; z-index: 61; inset: 0; padding: 25px; background: #fff; transform: translateY(-102%); transition: transform .45s cubic-bezier(.77,0,.18,1); display: flex; flex-direction: column; }
 .mobile-panel.open { transform: none; }
 .mobile-panel { overflow-y: auto; }
 .mobile-menu-actions { display: flex; flex-direction: column; margin: 24px 0; }
@@ -199,7 +199,7 @@ footer > p { margin: 80px 0 0; font: 300 8px var(--mono); opacity: .6; }
 .mobile-panel nav a { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--ink); font-size: clamp(48px, 15vw, 80px); line-height: 1; letter-spacing: -.06em; }
 .mobile-panel nav span { font: 400 10px var(--mono); }
 .mobile-panel > p { font: 400 9px/1.6 var(--mono); }
-.search-panel { position: fixed; z-index: 61; top: 0; left: 0; right: 0; padding: 27px 3vw 45px; background: var(--paper); transform: translateY(-102%); transition: transform .4s cubic-bezier(.77,0,.18,1); }
+.search-panel { position: fixed; z-index: 61; top: 0; left: 0; right: 0; padding: 27px 3vw 45px; background: #fff; transform: translateY(-102%); transition: transform .4s cubic-bezier(.77,0,.18,1); }
 .search-panel.open { transform: none; }
 .search-head { display: flex; justify-content: space-between; align-items: center; font: 400 9px var(--mono); letter-spacing: .08em; }
 .search-close { width: 36px; height: 36px; border: 1px solid; border-radius: 50%; background: transparent; display: grid; place-items: center; cursor: pointer; }
@@ -207,7 +207,7 @@ footer > p { margin: 80px 0 0; font: 300 8px var(--mono); opacity: .6; }
 .search-panel > input::placeholder { color: rgba(23,23,20,.24); }
 .search-results { display: grid; grid-template-columns: repeat(3, 1fr); border-left: 1px solid var(--ink); }
 .search-results button { min-height: 90px; padding: 14px; border: 0; border-right: 1px solid var(--ink); border-bottom: 1px solid var(--ink); background: transparent; text-align: left; display: grid; grid-template-columns: 1fr auto; gap: 5px; cursor: pointer; }
-.search-results button:hover { background: var(--acid); }
+.search-results button:hover { background: #fff; }
 .search-results button span { font-size: 14px; font-weight: 600; }
 .search-results button small { grid-row: 2; font: 400 8px var(--mono); text-transform: uppercase; opacity: .6; }
 .search-results button strong { grid-column: 2; grid-row: 1; font: 400 9px var(--mono); }
