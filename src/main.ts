@@ -63,7 +63,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
     <section class="manifesto" id="about">
       <div aria-hidden="true"></div>
-      <p class="manifesto-copy">H11 is a coffee break stretched into a way of living. We make <em>good coffee</em> and useful objects for people who prefer their days a little less polished.</p>
+      <p class="manifesto-copy">wanseo has small hands for her height, but loves making things with them. Maybe she gets that constant urge to create from her dad. She started this brand with a wish to make beautiful things and share them with you. We hope you’ll follow along.</p>
       <div class="manifesto-note">ROASTED IN SMALL BATCHES<br>DESIGNED IN SEOUL<br>EST. 2026</div>
     </section>
 
